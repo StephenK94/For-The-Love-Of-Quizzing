@@ -184,7 +184,9 @@ footer {
     background-color:  rgba(29, 29, 91, 0.781);
     color: #fff;
 }
-
+.btn:disabled{
+    cursor: no-drop;
+}
 #next-btn {
     background:lightgray;
     font-weight: 600;
@@ -195,11 +197,8 @@ footer {
     margin: 20px auto 0;
     display: none;
 }
-.btn:disabled{
-    cursor: no-drop;
-}
 #next-btn:hover{
-    background-color: rgba(29, 29, 91, 0.781);
+    background-color:  rgba(29, 29, 91, 0.781);
     color: #fff;;
 }
 .questionheader{
@@ -221,7 +220,7 @@ a {
     color: black
 }
 a:hover {
-    background-color:lightgray;
+    background-color:rgba(29, 29, 91, 0.781);
     color: white;
 
 }
@@ -231,4 +230,3 @@ a:hover {
 .incorrect{
     background-color: #ff9393;
 }
-

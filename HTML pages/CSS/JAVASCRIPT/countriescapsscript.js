@@ -8,6 +8,8 @@ function hideSidebar() {
     const sidebar=document.querySelector('.sidebar')
     sidebar.style.display = 'none'
 }
+
+//Aim is to have 20 questions per quiz
 const questions =[
     {
         //#1
@@ -31,7 +33,7 @@ const questions =[
     },
     {
         //#3
-        question: "To the nearest billion, how large is tge worlds population?",
+        question: "To the nearest billion, how large is the worlds population?",
         answers: [
             { text: "5", correct: false},
             { text: "6", correct: false},
@@ -76,7 +78,7 @@ const questions =[
             { text: "Venice", correct: false},
             { text: "Milan", correct: false},
             { text: "Naples", correct: true},
-            { text: "", correct: false},
+            { text: "Rome", correct: false},
         ]
     },
     {
@@ -91,9 +93,9 @@ const questions =[
     },
     {
         //#9
-        question: "What is the highest peak in Africe?",
+        question: "What is the highest peak in Africa?",
         answers: [
-            { text: "Moutn Everast", correct: false},
+            { text: "Mount Everast", correct: false},
             { text: "Mount Kenya", correct: false},
             { text: "Mount Kilimanjaro", correct: true},
             { text: "Mount Meru", correct: false},
@@ -101,7 +103,7 @@ const questions =[
     },
     {
         //#10
-        question: "In what US state is Fort Knox??",
+        question: "In what U.S state is Fort Knox?",
         answers: [
             { text: "Kentucky", correct: true},
             { text: "Nevada", correct: false},
@@ -194,8 +196,8 @@ const questions =[
         question: "What is the currency of Sweden?",
         answers: [
             { text: "Florints", correct: false},
-            { text: "Dollars", correct: true},
-            { text: "Swedish Krone", correct: false},
+            { text: "Dollars", correct: false},
+            { text: "Swedish Krone", correct: true},
             { text: "Euro", correct: false},
         ]
     },
@@ -211,6 +213,7 @@ const questions =[
     },
 ]
 
+//Will not display answers to incorrect questions to try and encourage replayability
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");

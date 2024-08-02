@@ -55,7 +55,7 @@ const questions =[
     },
     {
         //#5
-    question: "Which country has appeared in 3 THREE world cup finals, but has never won the competition?",
+    question: "Which country has appeared in Three world cup finals, but has never won the competition?",
     answers: [
         { text: "England", correct: false},
         { text: "Italy", correct: false},
@@ -155,7 +155,7 @@ const questions =[
     },
     {
         //#15
-        question: "Manchester Unioted famously wear red, but what colours did they wear berfore this?",
+        question: "Manchester United famously wear red, but what colours did they wear before this?",
         answers: [
             { text: "Green and Gold", correct: true},
             { text: "Yellow and Black", correct: false},
@@ -215,6 +215,7 @@ const questions =[
     },
 ]
 
+//Will not display answers to incorrect questions to try and encourage replayability
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");

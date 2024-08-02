@@ -1,3 +1,4 @@
+//Used to have a dynamic nav sidebar for smaller screens
 function showSidebar() {
     const sidebar= document.querySelector('.sidebar')
     sidebar.style.display = 'flex'

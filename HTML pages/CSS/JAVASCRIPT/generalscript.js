@@ -211,6 +211,7 @@ const questions =[
     },
 ];
 
+//Will not display answers to incorrect questions to try and encourage replayability
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");

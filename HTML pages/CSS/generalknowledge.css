@@ -220,7 +220,7 @@ a {
     color: black
 }
 a:hover {
-    background-color:lightgray;
+    background-color:rgba(29, 29, 91, 0.781);
     color: white;
 
 }
@@ -230,3 +230,4 @@ a:hover {
 .incorrect{
     background-color: #ff9393;
 }
+
