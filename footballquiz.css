@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(quizbackground.jpg);
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 400;
+    font-size: large;
+}
+nav a:hover{
+    background-color: rgba(29, 29, 91, 0.781);
+    color: white;
+}
+nav li:first-child {
+    margin-right: auto;
+}
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    opacity: 0.9;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+}
+.menu-button {
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar {
+        width: 100%
+    }
+}
+.sub-header {
+    color: black;
+    padding: 25px;
+    background-color: white;
+    margin: 20px 0 20px 0;
+    opacity: 0.9;
+}
+.text {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    background-color: white;
+    opacity: 0.9;
+}
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+}
+#wrapper {
+    height:100vh;
+    width: 100vw;
+    display: grid;
+    grid-template:
+        "h"
+        "n"
+        "m"
+        "f";
+}
+
+@media (min-width: 400px){
+    #wrapper {
+        grid-template:
+            "h"
+            "m"
+            "f"
+            /100%
+    }
+}
+
+@media (min-width: 768px){
+    #wrapper {
+       grid-template:     
+        "h   h"
+        "m   m"
+        "f   f"
+        /60% 40%
+    }
+}
+
+@media (min-width: 1030px){
+    #wrappper {
+        grid-template:
+        "h   h   h"
+        "m   m   m"
+        "f   f   f"
+    }
+}
+.app {
+    background: white;
+    width: 100%;
+    max-width: 80%;
+    margin: 100px auto 0;
+    padding: 30px
+}
+
+.app h2 {
+    font-size: 30px;
+    font-weight: 600;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.quiz {
+    padding: 20px 0;
+    margin: 0;
+}
+
+.btn {
+    background: lightgray;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    transition:0.4s;
+    cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+    background-color:  rgba(29, 29, 91, 0.781);
+    color: #fff;
+}
+
+#next-btn {
+    background:lightgray;
+    font-weight: 600;
+    width: 150px;
+    padding: 8px;
+    cursor: pointer;
+    border: 0;
+    margin: 20px auto 0;
+    display: none;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn:hover{
+    background-color: rgba(29, 29, 91, 0.781);
+    color: #fff;;
+}
+.questionheader{
+    color: black;
+    padding: 25px;
+    background-color: white;
+    margin: 20px 0 20px;
+    opacity: 0.9;
+}
+footer {
+    color: black;
+    background-image: url(footerbackground.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    color: black
+}
+a:hover {
+    background-color: rgba(29, 29, 91, 0.781);
+    color: white;
+
+}
+.correct{
+    background-color: #9aeabc;
+}
+.incorrect{
+    background-color: #ff9393;
+}
+
